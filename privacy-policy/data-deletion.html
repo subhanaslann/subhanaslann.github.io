@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm &amp; Equalizer - Data Deletion Request</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        p, li {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+        a { color: #1976d2; }
+        .highlight {
+            background: #e3f2fd;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #1976d2;
+            margin: 16px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 16px 0;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            margin-left: 12px;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .lang-switch a.active {
+            background: #1976d2;
+            color: #fff;
+            border-color: #1976d2;
+        }
+        .section-en, .section-tr { display: none; }
+        .section-en.active, .section-tr.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#" id="btn-en" class="active" onclick="switchLang('en')">English</a>
+            <a href="#" id="btn-tr" onclick="switchLang('tr')">Turkce</a>
+        </div>
+
+        <!-- ==================== ENGLISH ==================== -->
+        <div id="content-en" class="section-en active">
+            <h1>Alarm &amp; Equalizer - Data Deletion Request</h1>
+            <p class="last-updated">Last updated: February 9, 2026</p>
+
+            <p>This page explains how you can delete your data associated with the <strong>Alarm &amp; Equalizer</strong> app and how to request deletion of any data held by third-party services.</p>
+
+            <h2>1. Delete Data Directly from the App</h2>
+            <p>You can delete all locally stored data directly within the app:</p>
+            <ol>
+                <li>Open <strong>Alarm &amp; Equalizer</strong></li>
+                <li>Go to <strong>Settings</strong></li>
+                <li>Tap <strong>"Delete All Data"</strong></li>
+                <li>Confirm the deletion</li>
+            </ol>
+            <p>This will permanently remove all locally stored data including alarm configurations, preferences, consent settings, and purchase status from your device.</p>
+
+            <h2>2. Uninstall the App</h2>
+            <p>Uninstalling Alarm &amp; Equalizer from your device will automatically remove all locally stored data, including:</p>
+            <ul>
+                <li>Alarm configurations (times, labels, repeat schedules)</li>
+                <li>Custom alarm sound selections</li>
+                <li>App preferences (theme, language)</li>
+                <li>Consent and purchase status</li>
+            </ul>
+
+            <h2>3. Request Deletion of Third-Party Data</h2>
+            <p>Some data may be held by third-party services used by the app. To request deletion of this data, send an email to <a href="mailto:tektechgroup.info@gmail.com">tektechgroup.info@gmail.com</a> with the subject line <strong>"Data Deletion Request"</strong>.</p>
+
+            <div class="highlight">
+                <strong>Email template:</strong><br>
+                To: tektechgroup.info@gmail.com<br>
+                Subject: Data Deletion Request<br><br>
+                I would like to request the deletion of all my data associated with the Alarm &amp; Equalizer app. My device information: [your device model and Android version].
+            </div>
+
+            <p>We will process your request within <strong>30 days</strong> and delete or anonymize all identifiable data held by third-party services on your behalf.</p>
+
+            <h2>4. Data Types and Retention</h2>
+            <table>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Storage</th>
+                    <th>Deletion Method</th>
+                    <th>Retention After Deletion</th>
+                </tr>
+                <tr>
+                    <td>Alarm settings, preferences</td>
+                    <td>Device only</td>
+                    <td>In-app or uninstall</td>
+                    <td>Deleted immediately</td>
+                </tr>
+                <tr>
+                    <td>Analytics data</td>
+                    <td>Firebase Analytics</td>
+                    <td>Email request</td>
+                    <td>Up to 60 days</td>
+                </tr>
+                <tr>
+                    <td>Crash reports</td>
+                    <td>Firebase Crashlytics</td>
+                    <td>Email request</td>
+                    <td>Up to 90 days</td>
+                </tr>
+                <tr>
+                    <td>Advertising data</td>
+                    <td>Google AdMob</td>
+                    <td>Reset Advertising ID in device settings</td>
+                    <td>Per Google's policy</td>
+                </tr>
+                <tr>
+                    <td>Purchase history</td>
+                    <td>Google Play</td>
+                    <td>Managed by Google Play</td>
+                    <td>Per Google's policy</td>
+                </tr>
+            </table>
+
+            <div class="warning">
+                <strong>Note:</strong> Purchase history is managed by Google Play and cannot be deleted by us. You can manage your Google Play purchase history through your Google account settings.
+            </div>
+
+            <h2>5. Contact</h2>
+            <p>For any questions regarding data deletion, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:tektechgroup.info@gmail.com">tektechgroup.info@gmail.com</a></li>
+                <li><strong>Developer:</strong> TekTech Group</li>
+            </ul>
+        </div>
+
+        <!-- ==================== TURKCE ==================== -->
+        <div id="content-tr" class="section-tr">
+            <h1>Alarm &amp; Equalizer - Veri Silme Talebi</h1>
+            <p class="last-updated">Son guncelleme: 9 Subat 2026</p>
+
+            <p>Bu sayfa, <strong>Alarm &amp; Equalizer</strong> uygulamasiyla iliskili verilerinizi nasil silebileceginizi ve ucuncu taraf hizmetleri tarafindan tutulan verilerin silinmesini nasil talep edebileceginizi aciklar.</p>
+
+            <h2>1. Verileri Dogrudan Uygulamadan Silin</h2>
+            <p>Yerel olarak saklanan tum verileri dogrudan uygulama icinden silebilirsiniz:</p>
+            <ol>
+                <li><strong>Alarm &amp; Equalizer</strong> uygulamasini acin</li>
+                <li><strong>Ayarlar</strong> bolumune gidin</li>
+                <li><strong>"Tum Verileri Sil"</strong> secenegine dokunun</li>
+                <li>Silme islemini onaylayin</li>
+            </ol>
+            <p>Bu islem, alarm yapilandirmalari, tercihler, onay ayarlari ve satin alma durumu dahil olmak uzere cihazinizda yerel olarak saklanan tum verileri kalici olarak silecektir.</p>
+
+            <h2>2. Uygulamayi Kaldirin</h2>
+            <p>Alarm &amp; Equalizer'i cihazinizdan kaldirmak, yerel olarak saklanan tum verileri otomatik olarak siler:</p>
+            <ul>
+                <li>Alarm yapilandirmalari (saatler, etiketler, tekrar programlari)</li>
+                <li>Ozel alarm ses secimleri</li>
+                <li>Uygulama tercihleri (tema, dil)</li>
+                <li>Onay ve satin alma durumu</li>
+            </ul>
+
+            <h2>3. Ucuncu Taraf Verilerinin Silinmesini Talep Edin</h2>
+            <p>Bazi veriler, uygulama tarafindan kullanilan ucuncu taraf hizmetleri tarafindan tutulabilir. Bu verilerin silinmesini talep etmek icin <a href="mailto:tektechgroup.info@gmail.com">tektechgroup.info@gmail.com</a> adresine <strong>"Veri Silme Talebi"</strong> konu basligiyla bir e-posta gonderin.</p>
+
+            <div class="highlight">
+                <strong>E-posta sablonu:</strong><br>
+                Kime: tektechgroup.info@gmail.com<br>
+                Konu: Veri Silme Talebi<br><br>
+                Alarm &amp; Equalizer uygulamasiyla iliskili tum verilerimin silinmesini talep ediyorum. Cihaz bilgilerim: [cihaz modeliniz ve Android surumunuz].
+            </div>
+
+            <p>Talebinizi <strong>30 gun</strong> icinde isleyecek ve ucuncu taraf hizmetleri tarafindan tutulan tum tanimlanabilir verileri sizin adiniza silecek veya anonimlestirecegiz.</p>
+
+            <h2>4. Veri Turleri ve Saklama Sureleri</h2>
+            <table>
+                <tr>
+                    <th>Veri Turu</th>
+                    <th>Depolama</th>
+                    <th>Silme Yontemi</th>
+                    <th>Silme Sonrasi Saklama</th>
+                </tr>
+                <tr>
+                    <td>Alarm ayarlari, tercihler</td>
+                    <td>Yalnizca cihaz</td>
+                    <td>Uygulama icinden veya kaldirma</td>
+                    <td>Hemen silinir</td>
+                </tr>
+                <tr>
+                    <td>Analitik verileri</td>
+                    <td>Firebase Analytics</td>
+                    <td>E-posta talebi</td>
+                    <td>60 gune kadar</td>
+                </tr>
+                <tr>
+                    <td>Cokme raporlari</td>
+                    <td>Firebase Crashlytics</td>
+                    <td>E-posta talebi</td>
+                    <td>90 gune kadar</td>
+                </tr>
+                <tr>
+                    <td>Reklam verileri</td>
+                    <td>Google AdMob</td>
+                    <td>Cihaz ayarlarindan Reklam Kimligini sifirlama</td>
+                    <td>Google politikasina gore</td>
+                </tr>
+                <tr>
+                    <td>Satin alma gecmisi</td>
+                    <td>Google Play</td>
+                    <td>Google Play tarafindan yonetilir</td>
+                    <td>Google politikasina gore</td>
+                </tr>
+            </table>
+
+            <div class="warning">
+                <strong>Not:</strong> Satin alma gecmisi Google Play tarafindan yonetilir ve tarafimizca silinemez. Google Play satin alma gecmisinizi Google hesap ayarlarinizdan yonetebilirsiniz.
+            </div>
+
+            <h2>5. Iletisim</h2>
+            <p>Veri silme ile ilgili herhangi bir sorunuz icin lutfen bizimle iletisime gecin:</p>
+            <ul>
+                <li><strong>E-posta:</strong> <a href="mailto:tektechgroup.info@gmail.com">tektechgroup.info@gmail.com</a></li>
+                <li><strong>Gelistirici:</strong> TekTech Group</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-en').classList.toggle('active', lang === 'en');
+            document.getElementById('content-tr').classList.toggle('active', lang === 'tr');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+        }
+    </script>
+</body>
+</html>
